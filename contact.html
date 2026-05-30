@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bella Terra — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand" onclick="location.href='index.html'">
+      <span class="nav-brand-main">Bella Terra</span>
+      <span class="nav-brand-sub">Fine Dining · Est. 1996</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="administration.html">Administration</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header" data-bg-text="Hello">
+    <span class="section-label">Get In Touch</span>
+    <h1>Contact Us</h1>
+    <p>Visit us, call, write — we love to hear from you.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-left">
+      <h2>Come <em>Find</em><br>Your Table</h2>
+      <p class="intro">Every great meal begins with a reservation. We look forward to welcoming you.</p>
+
+      <div class="c-block">
+        <div class="c-icon">📍</div>
+        <div>
+          <span class="c-label">Address</span>
+          <div class="c-value">18, Via della Luna, Nungambakkam<br>Chennai, Tamil Nadu — 600034</div>
+        </div>
+      </div>
+
+      <div class="c-block">
+        <div class="c-icon">📞</div>
+        <div>
+          <span class="c-label">Phone</span>
+          <div class="c-value">+91 98400 12345<br>+91 44 4567 8901</div>
+        </div>
+      </div>
+
+      <div class="c-block">
+        <div class="c-icon">✉️</div>
+        <div>
+          <span class="c-label">Email</span>
+          <div class="c-value">ciao@bellaterra.in<br>events@bellaterra.in</div>
+        </div>
+      </div>
+
+      <div class="c-block">
+        <div class="c-icon">🕯</div>
+        <div>
+          <span class="c-label">Dining Hours</span>
+          <div class="c-value">Lunch: 12:00 – 3:00 PM<br>Dinner: 7:00 – 11:30 PM<br>Closed Tuesdays</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <h2>Send a Message</h2>
+      <p class="intro">For reservations, events, or simply to say hello.</p>
+
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fn">First Name</label>
+            <input type="text" id="fn" placeholder="Arjun" required/>
+          </div>
+          <div class="form-group">
+            <label for="ln">Last Name</label>
+            <input type="text" id="ln" placeholder="Kumar"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="em">Email Address</label>
+          <input type="email" id="em" placeholder="you@example.com" required/>
+        </div>
+        <div class="form-group">
+          <label for="ph">Phone</label>
+          <input type="tel" id="ph" placeholder="+91 XXXXX XXXXX"/>
+        </div>
+        <div class="form-group">
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="4" placeholder="Reservation request, event enquiry, or just a note…" required></textarea>
+        </div>
+        <button type="submit" class="btn-fill" style="width:100%;text-align:center;"><span>Send Message</span></button>
+        <p class="form-success" id="form-success">✦ Grazie! We'll be in touch within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">Bella Terra</div>
+    <div class="footer-text">&copy; 2025 Bella Terra Fine Dining &mdash; Designed by <strong>Parani Bala M</strong></div>
+    <div class="footer-ornament">❧</div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
