@@ -31,38 +31,10 @@ Publish the website in the given URL.
 
 
 ## OUTPUT:
+<img width="1600" height="868" alt="resturant-1" src="https://github.com/user-attachments/assets/8b1877b4-cf44-416e-8f7c-5ca0d633f14b" />
+<img width="1600" height="819" alt="resturant-2" src="https://github.com/user-attachments/assets/a5cb80bd-40cf-4760-b2b6-f67337e14cf4" />
+<img width="1600" height="869" alt="resturant-3" src="https://github.com/user-attachments/assets/3d40c331-5743-4f87-abb5-38a8e36ebec9" />
 
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
-
-# Minimal Django scaffold
-
-Files added:
-
-- `manage.py`
-- `mysite/` (package with `settings.py`, `urls.py`, `wsgi.py`)
-- `core/` (sample app with a home page)
-- `requirements.txt`
-
-Quick start
-
-1. Create and activate a virtual environment:
-
-```bash
-python -m venv .venv
-# on Windows: .venv\Scripts\activate
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Apply migrations and run server:
-
-```bash
-python manage.py migrate
-python manage.py runserver
-```
